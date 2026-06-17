@@ -1,0 +1,20 @@
+# ──────────────────────────────────────────────────
+# Problem     String Split and Join
+# Difficulty  Easy
+# Subdomain   Strings
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-06-18, 12:22 a.m.
+# ──────────────────────────────────────────────────
+
+
+
+def split_and_join(line):
+    z = line.split(" ")
+    return "-".join(z)
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)

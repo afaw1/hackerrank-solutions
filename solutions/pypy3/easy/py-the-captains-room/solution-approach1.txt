@@ -1,0 +1,23 @@
+# ──────────────────────────────────────────────────
+# Problem     The Captain's Room 
+# Difficulty  Easy
+# Subdomain   Sets
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-06-25, 10:03 p.m.
+# ──────────────────────────────────────────────────
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+k=int(input())
+lst = list(map(int,input().split()))
+frequency = {}
+for i in lst:
+    if i in frequency:
+        frequency[i] = frequency[i]+1
+    else:
+        frequency[i] = 1
+for k, v in frequency.items():
+    if v == 1:
+        print(k)
+        break
